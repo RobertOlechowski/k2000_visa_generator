@@ -38,7 +38,7 @@ handlers:
 loggers:
   code_generator:
     level: INFO
-    handlers: [code_generator_file]
+    handlers: [console, code_generator_file]
     propagate: False
 
 root:

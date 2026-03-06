@@ -34,7 +34,7 @@ def generate():
             logger.warning(f"Code generation attempt without Device ID. IP: {request.remote_addr}")
             return jsonify({'error': 'Device ID is required'}), 400
 
-        days = 60
+        days = 5
         current_time = datetime.now()
 
         result = generator.generate(dev_id=dev_id, days=days, current_time=current_time)
