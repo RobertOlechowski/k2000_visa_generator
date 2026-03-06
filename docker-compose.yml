@@ -1,0 +1,7 @@
+services:
+  k2000_generator:
+    image: ghcr.io/robertolechowski/k2000_visa_generator
+    container_name: k2000_generator
+    stop_grace_period: 5s
+    restart: "unless-stopped"
+    ports: [8000:8000]
