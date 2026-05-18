@@ -8,7 +8,7 @@ To opis tego co **JEST** — nie historia zmian.
 ## Stack
 
 - **Backend:** Python 3.13+ · Flask 3.x · Jinja2 · Gunicorn
-- **Pakiety:** uv (`pyproject.toml`) + fallback `requirements.txt`
+- **Pakiety:** uv (`pyproject.toml` + `uv.lock`, jedyna obsługiwana metoda)
 - **Konteneryzacja:** Docker multi-stage (python-deps → runtime), GHCR
 - **CI/CD:** GitHub Actions, trigger na tagi `v*`
 

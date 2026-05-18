@@ -11,14 +11,13 @@ Lista otwartych zadań (`[ ]`). AI usuwa zrealizowane.
 
 ---
 
-## Frontend / UX
+## DevOps / build
 
-- [ ] **Wyświetlić wersję w stopce** — `app_version` jest już w context processor, dodać render w `index.html`.
-- [ ] **Favicon set** — sprawdzić czy `static/favicon/*` istnieje (template'a używa).
+- [ ] **Pokrycie testami** — uruchomić `pytest --cov`, sprawdzić % pokrycia, dodać brakujące (zwłaszcza dla `WebApp` endpointów i `DeviceIdParser` edge cases).
+- [ ] **Pre-commit hook** — `uv run pytest tests/` jako sanity check przed commitem.
 
 ---
 
-## DevOps / build
+## Pomysły większe (ankietowe — wymagają decyzji)
 
-- [ ] **uv.lock w repo** — wygenerować przez `uv sync` i zacommitować (`uv.lock` jest wymagany przez `Dockerfile`: `uv sync --frozen`).
-
+- [ ] **CLI mode** — `run.py` istnieje (CLI generator), ale powiela logikę. Decyzja: zostawić oba interfejsy czy zrobić `python -m app` z subkomendami `serve` / `generate`?

@@ -162,11 +162,8 @@ Przed pełną implementacją **zawsze** produkuj minimalny działający PoC:
 ## Local Development
 
 ```bash
-# Środowisko Python — uv (rekomendowane)
-uv sync                        # instaluje wg pyproject.toml
-
-# Alternatywa — pip + requirements.txt
-pip install -r requirements.txt
+# Środowisko Python — uv (jedyny obsługiwany sposób)
+uv sync                        # instaluje wg pyproject.toml + uv.lock
 
 # Uruchomienie aplikacji (debug)
 uv run python wsgi.py          # http://127.0.0.1:5000
