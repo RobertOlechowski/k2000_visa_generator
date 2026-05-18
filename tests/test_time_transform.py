@@ -1,6 +1,6 @@
 import unittest
-from lib_code.Transform import TimeTransform
-from lib_code.Uint64 import Uint64
+from app.Transform import TimeTransform
+from app.Uint64 import Uint64
 
 
 class TestTimeTransform(unittest.TestCase):

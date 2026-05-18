@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime
-from lib_code.TimeHelper import TimeHelper
+from app.TimeHelper import TimeHelper
 
 
 class TestTimeHelper(unittest.TestCase):

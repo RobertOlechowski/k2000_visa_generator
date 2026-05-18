@@ -1,53 +1,39 @@
-# Python cache
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-
-# Virtual environments
-venv/
-env/
-ENV/
-.venv
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Git
+# VCS / IDE
 .git/
+.github/
 .gitignore
 .gitattributes
+.editorconfig
+.idea/
+.aiassistant/
+.aiignore
 
-# Tests
-tests/
-*.pytest_cache/
-.coverage
-htmlcov/
+# Local Python env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Logs
+# Logs / runtime artifacts
+.logs/
 logs/
 *.log
 
-# Docker
+# Docs / meta — nie potrzebne w obrazie
+docs/
 docker/
-Dockerfile
+README.md
+CLAUDE.md
+*.md
+
+# Tests — nie potrzebne w runtime
+tests/
+
+# Misc user / scratch
 .dockerignore
 docker-compose*.yml
-
-# Documentation
-*.md
-docs/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Build artifacts
-dist/
-build/
-*.egg-info/
+run.py

@@ -1,5 +1,5 @@
 from datetime import datetime
-from lib_code.PhilipsGenerator import PhilipsGenerator
+from app.PhilipsGenerator import PhilipsGenerator
 
 
 def main():

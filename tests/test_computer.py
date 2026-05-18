@@ -1,7 +1,7 @@
 import unittest
 from datetime import datetime
-from lib_code.Computer import Computer
-from lib_code.Uint32 import Uint32
+from app.Computer import Computer
+from app.Uint32 import Uint32
 
 
 class TestComputer(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
-from lib_code.Transform import Transform2
-from lib_code.Uint32 import Uint32
+from app.Transform import Transform2
+from app.Uint32 import Uint32
 
 
 class TestTransform2(unittest.TestCase):

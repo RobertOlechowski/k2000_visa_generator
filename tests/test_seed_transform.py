@@ -1,6 +1,6 @@
 import unittest
-from lib_code.Transform import SeedTransform
-from lib_code.Uint32 import Uint32
+from app.Transform import SeedTransform
+from app.Uint32 import Uint32
 
 
 class TestSeedTransform(unittest.TestCase):
