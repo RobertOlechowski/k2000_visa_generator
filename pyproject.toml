@@ -1,0 +1,29 @@
+[project]
+name = "k2000-visa-generator"
+version = "0.1.0"
+description = "K2000 Visa Entry Code Generator — Flask web app"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    { name = "Robert Olechowski", email = "robertolechowski@gmail.com" },
+]
+
+dependencies = [
+    "Flask>=3.1,<4",
+    "Jinja2>=3.1",
+    "Werkzeug>=3.1",
+    "gunicorn>=23",
+    "PyYAML>=6.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

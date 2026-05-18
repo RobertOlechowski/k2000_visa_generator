@@ -1,0 +1,92 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="48" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="Redis-Semaphore" />
+          <option value="alabaster" />
+          <option value="argon2-cffi" />
+          <option value="argon2-cffi-bindings" />
+          <option value="asttokens" />
+          <option value="awscrt" />
+          <option value="babel" />
+          <option value="boltons" />
+          <option value="Brotli" />
+          <option value="brotlicffi" />
+          <option value="cffi" />
+          <option value="comm" />
+          <option value="contextlib2" />
+          <option value="cryptography" />
+          <option value="Cython" />
+          <option value="decorator" />
+          <option value="dl" />
+          <option value="executing" />
+          <option value="fanstatic" />
+          <option value="funcsigs" />
+          <option value="greenlet" />
+          <option value="h2" />
+          <option value="hpack" />
+          <option value="humanize" />
+          <option value="hyperframe" />
+          <option value="imagesize" />
+          <option value="ipython" />
+          <option value="ipython_pygments_lexers" />
+          <option value="ipywidgets" />
+          <option value="jedi" />
+          <option value="Jinja2" />
+          <option value="js" />
+          <option value="jupyterlab_widgets" />
+          <option value="legacy-cgi" />
+          <option value="lockfile" />
+          <option value="MarkupSafe" />
+          <option value="matplotlib-inline" />
+          <option value="minio" />
+          <option value="mock" />
+          <option value="parso" />
+          <option value="pillow" />
+          <option value="prompt_toolkit" />
+          <option value="protobuf" />
+          <option value="pure_eval" />
+          <option value="pycparser" />
+          <option value="pycryptodome" />
+          <option value="pyOpenSSL" />
+          <option value="pywin32" />
+          <option value="PyYAML" />
+          <option value="railroad" />
+          <option value="roman-numerals-py" />
+          <option value="setuptools" />
+          <option value="six" />
+          <option value="snowballstemmer" />
+          <option value="Sphinx" />
+          <option value="sphinxcontrib-applehelp" />
+          <option value="sphinxcontrib-devhelp" />
+          <option value="sphinxcontrib-htmlhelp" />
+          <option value="sphinxcontrib-jsmath" />
+          <option value="sphinxcontrib-qthelp" />
+          <option value="sphinxcontrib-serializinghtml" />
+          <option value="SQLAlchemy" />
+          <option value="stack-data" />
+          <option value="thread" />
+          <option value="toolz" />
+          <option value="tornado" />
+          <option value="traitlets" />
+          <option value="trove-classifiers" />
+          <option value="truststore" />
+          <option value="typing_extensions" />
+          <option value="urllib3-secure-extra" />
+          <option value="wcwidth" />
+          <option value="WebOb" />
+          <option value="widgetsnbextension" />
+          <option value="zstandard" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
