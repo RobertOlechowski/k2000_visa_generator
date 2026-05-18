@@ -123,3 +123,4 @@ build/
 out/
 *.iml
 *.iws
+/.idea/claudeCodeTabState.xml
