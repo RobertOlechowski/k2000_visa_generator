@@ -11,6 +11,7 @@ cd "$(dirname "$0")/.."
 
 version=$(python3 docker/build_utils.py get_version)
 build_time=$(python3 docker/build_utils.py get_build_time)
+build_revision=$(git rev-parse HEAD)
 
 export DOCKER_BUILDKIT=1
 
@@ -24,6 +25,7 @@ echo "=========================================="
 if ! docker build --platform linux/amd64 --progress=plain -f docker/Dockerfile \
     --build-arg BUILD_VERSION="${version}" \
     --build-arg BUILD_TIME="${build_time}" \
+    --build-arg BUILD_REVISION="${build_revision}" \
     -t "${IMAGE_NAME}:latest" . 2>&1 | tee -a "$LOG_FILE"; then
     echo "==========================================" | tee -a "$LOG_FILE" >&2
     echo "Docker build failed. See ${LOG_FILE} for details." | tee -a "$LOG_FILE" >&2

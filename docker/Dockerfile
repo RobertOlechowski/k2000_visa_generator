@@ -8,7 +8,7 @@ WORKDIR /app
 
 ENV UV_PROJECT_ENVIRONMENT=/app/.venv
 
-COPY --from=ghcr.io/astral-sh/uv:0.6.14 /uv /usr/local/bin/uv
+COPY --from=ghcr.io/astral-sh/uv:0.11.15 /uv /usr/local/bin/uv
 
 COPY pyproject.toml uv.lock ./
 RUN --mount=type=cache,target=/root/.cache/uv uv sync --frozen --no-dev --no-install-project
@@ -19,12 +19,18 @@ FROM python:3.13-slim
 ARG DEBIAN_FRONTEND=noninteractive
 ARG BUILD_VERSION=undefined
 ARG BUILD_TIME=undefined
+ARG BUILD_REVISION=undefined
 
 LABEL maintainer="Robert Olechowski <robertolechowski@gmail.com>"
-LABEL license="Apache License 2.0"
+LABEL org.opencontainers.image.title="k2000-visa-generator"
+LABEL org.opencontainers.image.description="K2000 Visa Entry Code Generator — Flask web app"
 LABEL org.opencontainers.image.authors="Robert Olechowski <robertolechowski@gmail.com>"
 LABEL org.opencontainers.image.url="https://github.com/RobertOlechowski/k2000_visa_generator"
 LABEL org.opencontainers.image.source="https://github.com/RobertOlechowski/k2000_visa_generator"
+LABEL org.opencontainers.image.licenses="Apache-2.0"
+LABEL org.opencontainers.image.version=$BUILD_VERSION
+LABEL org.opencontainers.image.created=$BUILD_TIME
+LABEL org.opencontainers.image.revision=$BUILD_REVISION
 
 WORKDIR /app
 
